@@ -43,6 +43,7 @@ General Arguments:
 Mode Arguments:
     --install       -i      Perform an installation
     --update        -u      Perform an update
+    --create        -c      Create an environment
 
 Positional Arguments:
 package                 Name of package(s) to update
