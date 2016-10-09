@@ -85,6 +85,7 @@ ssb --install --dev --name mydev [pkg_name]
 Installing a package into an active dev environment
 
 ```bash
+source activate mydev
 ssb --install --dev [pkg_name]
 ```
 
