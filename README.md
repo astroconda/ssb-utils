@@ -39,9 +39,53 @@ General Arguments:
 Mode Arguments:
     --install       -i      Perform an installation
     --update        -u      Perform an update
+    --create        -c      Create an environment
 
 Positional Arguments:
 package                 Name of package(s) to update
+```
+
+### Examples
+
+(There are many permutations of this command, but the samples below should be sufficient to get you started)
+
+Creating a dev environment
+
+```bash
+ssb --create --dev --name mydev27 python=2.7 stsci
+ssb --create --dev --name mydev35 python=3.5 stsci
+```
+
+Creating an AstroConda environment
+
+```bash
+ssb --create --public --name mypublic27 python=2.7 stsci
+ssb --create --public --name mypublic35 python=3.5 stsci
+```
+
+Updating a dev environment by name
+
+```bash
+ssb --update --all --dev --name mydev
+```
+
+Updating an active dev environment
+
+```bash
+source activate mydev
+ssb --update --all --dev
+```
+
+Installing a package into a dev environment
+
+```bash
+ssb --install --dev --name mydev [pkg_name]
+```
+
+Installing a package into an active dev environment
+
+```bash
+ssb --install --dev [pkg_name]
 ```
 
 # Support
