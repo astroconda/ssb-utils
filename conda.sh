@@ -221,7 +221,7 @@ function ssb
     if [[ -z $CONDA_PREFIX ]] && [[ $is_named == 0 ]]; then
         ssb_emesg "Refusing to corrupt base installation!"
         ssb_emesg "You are not in an active conda environment!"
-        ssb_emesg "Use --name to update a specific environment!"
+        ssb_emesg "Use --name to interact with a specific environment!"
         ssb_usage
         return 1
     fi
